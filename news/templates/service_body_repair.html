@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кузовной ремонт</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Кузовной ремонт</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="service-details">
+        <h2>Кузовной ремонт</h2>
+        <img src="{% static 'images/service4.jpg' %}" alt="Кузовной ремонт">
+        <p>Профессиональный кузовной ремонт и покраска. Мы восстановим внешний вид вашего автомобиля до состояния нового.</p>
+    </section>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

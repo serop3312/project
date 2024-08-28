@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт двигателя</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Ремонт двигателя</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="service-details">
+        <h2>Ремонт двигателя</h2>
+        <img src="{% static 'images/service1.jpg' %}" alt="Ремонт двигателя">
+        <p>Мы предлагаем качественный ремонт двигателей любой сложности. Наши специалисты используют только оригинальные запчасти и современное оборудование для обеспечения высокого качества работ.</p>
+    </section>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

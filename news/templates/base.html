@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/img.png' %}" type="image/png">
+    <title>{% block title %}Автомеханика{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Автомеханика</h1>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            {% if user.is_authenticated %}
+                <span>Привет, {{ user.username }}!</span>
+                <a href="{% url 'logout' %}">Выход</a>
+            {% else %}
+                <a href="{% url 'register' %}">Регистрация</a>
+                <a href="{% url 'login' %}">Вход</a>
+            {% endif %}
+            <!-- Добавьте другие ссылки навигации, если они есть -->
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

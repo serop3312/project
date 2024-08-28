@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт подвески</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .service-description {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Автосервис "Подвеска Плюс"</h1>
+    </header>
+    <nav>
+        <a href="{% url 'home' %}">Услуги</a>
+    </nav>
+    <div class="container">
+        <h2>Ремонт подвески</h2>
+        <img src="{% static 'images/service3.jpg' %}" alt="Ремонт подвески" width="600"/>
+        <div class="service-description">
+            <p>Наша компания предлагает профессиональный ремонт подвески для всех типов автомобилей. Мы используем только качественные запчасти и современное оборудование, чтобы обеспечить высокий уровень обслуживания.</p>
+            <p>Наши услуги включают:</p>
+            <ul>
+                <li>Замена амортизаторов</li>
+                <li>Ремонт и замена рычагов</li>
+                <li>Замена стоек стабилизатора</li>
+                <li>Регулировка углов установки колес</li>
+                <li>Диагностика и ремонт всех элементов подвески</li>
+            </ul>
+            <p>Обратившись к нам, вы получите быстрый и качественный ремонт, который гарантирует безопасность и комфорт вашего вождения.</p>
+        </div>
+    </div>
+</body>
+</html>

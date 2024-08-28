@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/img.png' %}" type="image/png">
+    <title>Выход</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .logout {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logout h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Автомеханика</h1>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <!-- Добавьте другие ссылки навигации, если они есть -->
+        </nav>
+    </header>
+
+    <section class="logout">
+        <h2>Вы успешно вышли из системы</h2>
+        <p><a href="{% url 'login' %}">Войти снова</a></p>
+    </section>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

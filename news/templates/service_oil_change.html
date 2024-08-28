@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замена масла</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Замена масла</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="service-details">
+        <h2>Замена масла</h2>
+        <img src="{% static 'images/service2.jpg' %}" alt="Замена масла">
+        <p>Профессиональная замена масла и фильтров. Мы используем только качественные масла и фильтры для обеспечения долговечности вашего двигателя.</p>
+    </section>
+
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
