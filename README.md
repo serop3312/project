@@ -40,7 +40,7 @@ Windows
 
 4. Активация виртуального окружения
 
-```.source venv/bin/activate```
+```source venv/bin/activate```
 
 5. Установка зависимостей
 
