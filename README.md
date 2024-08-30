@@ -22,7 +22,7 @@ Windows
 
 6. Запуск скрипта для демонстрации возможностей project
 
-```python manage.py```
+```python manage.py runserver```
 
  Linux
 
