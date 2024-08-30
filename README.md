@@ -6,7 +6,7 @@ Windows
 
 2. Переход в директорию project
 
-```cd project-main```
+```cd project```
 
 3. Создание виртуального окружения
 
@@ -32,7 +32,7 @@ Windows
 
 2. Переход в директорию project
 
-```cd project-main```
+```cd project```
 
 3. Создание виртуального окружения
 
